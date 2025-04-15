@@ -8,8 +8,8 @@ const App: React.FC = () => {
       <h1>Al Rashed Order App</h1>
       <ul className="list-group">
         {mockProducts.map((product: Product) => (
-          <li key={product.id} className="list-group-item">
-            {product.name} - ${product.price}
+          <li key={product.itemNumber} className="list-group-item">
+            {product.itemNumber} - ${product.description}
           </li>
         ))}
       </ul>
